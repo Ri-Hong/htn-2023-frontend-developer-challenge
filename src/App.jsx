@@ -39,6 +39,7 @@ function App() {
       <BrowserRouter>
         <Navbar></Navbar>
         <Routes>
+          <Route exact path="/" element={<Events events={events}/>}/>
           <Route exact path="/events" element={<Events events={events}/>}/>
           <Route exact path="/login" element={<Login/>}/>
           <Route path="/events/:id" element={<EventPage events={events} />}/>
