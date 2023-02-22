@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/htn-2023-frontend-developer-challenge/events/static/css/main.a1899e36.css",
+    "main.js": "/htn-2023-frontend-developer-challenge/events/static/js/main.864040d5.js",
+    "index.html": "/htn-2023-frontend-developer-challenge/events/index.html",
+    "main.a1899e36.css.map": "/htn-2023-frontend-developer-challenge/events/static/css/main.a1899e36.css.map",
+    "main.864040d5.js.map": "/htn-2023-frontend-developer-challenge/events/static/js/main.864040d5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a1899e36.css",
+    "static/js/main.864040d5.js"
+  ]
+}
