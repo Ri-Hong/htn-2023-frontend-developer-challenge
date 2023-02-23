@@ -6,7 +6,9 @@ import {
   LoginCard,
   HeaderText,
   Input,
-  LoginButton
+  LoginButton,
+  ErrorBanner,
+  ErrorMessage
  } from './Login.elements'
 
 
@@ -46,10 +48,13 @@ const Login = () => {
 
   return (
     <div>
-      <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
-
       <LoginCard onSubmit={handleSubmit}>
         <HeaderText>👋 Welcome Back!</HeaderText>
+
+        <ErrorBanner err={errMsg}>
+          <ErrorMessage ref={errRef} err={errMsg}>{errMsg}</ErrorMessage>
+        </ErrorBanner>
+
         <Input
           placeholder="Username"
           type="text"

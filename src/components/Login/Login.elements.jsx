@@ -43,7 +43,7 @@ export const LoginCard = styled.form`
 
 export const HeaderText = styled.h1`
   font-size: 36px;
-  margin: 0 auto 50px auto;
+  margin: 0 auto 0 auto;
 `
 
 export const Input = styled.input`
@@ -72,4 +72,19 @@ export const LoginButton = styled.button`
     transition: background 1s ease-in-out;
     cursor: pointer;
   }
+`
+
+export const ErrorBanner = styled.div`
+  height: 30px;
+  margin: 10px 0 0 0;
+  background-color: ${({ err }) => (err === '' ? '#F3F3F3' : '#DF7E7E')};
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+`
+
+export const ErrorMessage = styled.p`
+  color: ${({ err }) => (err === '' ? 'black' : '#F3F3F3')};;
+  margin: 0;
 `
