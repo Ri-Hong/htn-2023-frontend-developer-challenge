@@ -15,6 +15,7 @@ import {
 } from './Events.elements'
 
 const Events = ({ events }) => {
+  console.log("Events");
   const { loggedIn } = useContext(AuthContext);
 
   const [processedEvents, setProcessedEvents] = useState(events);

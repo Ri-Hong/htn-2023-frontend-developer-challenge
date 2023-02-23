@@ -153,12 +153,13 @@ export const RelCard = styled.div`
 
   &:hover {
     background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 20px, transparent 20px) 0% 0%/25px 25px no-repeat,
-            radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 20px, transparent 20px) 100% 0%/25px 25px no-repeat,
-            radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 20px, transparent 20px) 0% 100%/25px 25px no-repeat,
-            radial-gradient(circle at 0 0, #ffffff 0, #ffffff 20px, transparent 20px) 100% 100%/25px 25px no-repeat,
-            linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 10px) calc(100% - 50px) no-repeat,
-            linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 50px) calc(100% - 10px) no-repeat,
-            linear-gradient(135deg, ${props => props.bgColor} 0%, transparent 57%);
+    radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 20px, transparent 20px) 100% 0%/25px 25px no-repeat,
+    radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 20px, transparent 20px) 0% 100%/25px 25px no-repeat,
+    radial-gradient(circle at 0 0, #ffffff 0, #ffffff 20px, transparent 20px) 100% 100%/25px 25px no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 10px) calc(100% - 50px) no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 50px) calc(100% - 10px) no-repeat,
+    linear-gradient(90deg, ${props => props.bgColor} 0%, #F3F3F3 60%);
+
     transition: background 0.25s ease-in-out;
   }
 `

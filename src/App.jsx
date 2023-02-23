@@ -39,14 +39,13 @@ function App() {
       <BrowserRouter>
         <Navbar></Navbar>
         <Routes>
-          <Route exact path="/" element={<Events events={events}/>}/>
-          <Route exact path="/events" element={<Events events={events}/>}/>
-          <Route exact path="/login" element={<Login/>}/>
+          <Route path="/htn-2023-frontend-developer-challenge/" element={<Events events={events}/>}/>
+          <Route path="/events" element={<Events events={events}/>}/>
+          <Route path="/login" element={<Login/>}/>
           <Route path="/events/:id" element={<EventPage events={events} />}/>
         </Routes>
       </BrowserRouter>
     </div>
-
   );
 }
 

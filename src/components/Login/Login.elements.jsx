@@ -57,20 +57,19 @@ export const Input = styled.input`
 `
 
 export const LoginButton = styled.button`
+  cursor: pointer;
   height: 60px;
   border-radius: 10px;
   border: none;
   color: #FFFFFF;
   font-size: 20px;
-  background: rgb(147,132,223);
-  background: linear-gradient(90deg, rgba(147,132,223,1) 0%, rgba(126,153,223,1) 60%, rgba(126,188,194,1) 100%);
+  background-image: linear-gradient(90deg, rgba(147,132,223,1) 0%, rgba(126,153,223,1) 60%, rgba(126,188,194,1) 100%);
   margin: 20px 0;
+  background-size: 200% 100%;
+  transition: all .1s ease-in-out;
 
   &:hover {
-    background: rgb(147,132,223);
-    background: linear-gradient(270deg, rgba(147,132,223,1) 0%, rgba(126,153,223,1) 60%);
-    transition: background 1s ease-in-out;
-    cursor: pointer;
+    background-position: 100% 0;
   }
 `
 
@@ -82,6 +81,7 @@ export const ErrorBanner = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  border-radius: 10px;
 `
 
 export const ErrorMessage = styled.p`

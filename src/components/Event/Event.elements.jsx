@@ -18,6 +18,7 @@ export const Card = styled.div`
   border-radius: 25px;
   background-color: #F3F3F3;
   position: relative;
+  margin: 3px 0;
 
   :before{
     content: "";
@@ -41,6 +42,12 @@ export const Card = styled.div`
     z-index: -2;
     border-radius: 20px;
     box-shadow: 0px 8px 0px 3px #B6B9E3, 0px 40px 40px #8E8CD2;
+  }
+
+  &:hover {
+    margin-top: 0;
+    margin-bottom: 6px;
+    transition: background 0.25s ease-in-out;
   }
 
   &:hover:before {
