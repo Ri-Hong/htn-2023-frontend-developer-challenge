@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/htn-2023-frontend-developer-challenge/static/css/main.a1899e36.css",
-    "main.js": "/htn-2023-frontend-developer-challenge/static/js/main.cc1359d7.js",
+    "main.js": "/htn-2023-frontend-developer-challenge/static/js/main.f99bd099.js",
     "index.html": "/htn-2023-frontend-developer-challenge/index.html",
     "main.a1899e36.css.map": "/htn-2023-frontend-developer-challenge/static/css/main.a1899e36.css.map",
-    "main.cc1359d7.js.map": "/htn-2023-frontend-developer-challenge/static/js/main.cc1359d7.js.map"
+    "main.f99bd099.js.map": "/htn-2023-frontend-developer-challenge/static/js/main.f99bd099.js.map"
   },
   "entrypoints": [
     "static/css/main.a1899e36.css",
-    "static/js/main.cc1359d7.js"
+    "static/js/main.f99bd099.js"
   ]
 }
