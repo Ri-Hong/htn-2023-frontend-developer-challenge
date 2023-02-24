@@ -15,8 +15,10 @@ import {
   SearchButton,
   FilterButton,
   FilterContainer,
+  FilterSortContainer,
   FilterButtonContainer,
   DropdownContainer,
+  Label,
 } from "./Events.elements";
 
 const Events = ({ events }) => {
@@ -132,10 +134,10 @@ const Events = ({ events }) => {
 
   const dropdownStyles = {
     control: (provided, state) => ({
-      ...provided
+      ...provided,
     }),
     option: (provided, state) => ({
-      ...provided
+      ...provided,
     }),
     menu: (provided, state) => ({
       ...provided,
@@ -156,31 +158,36 @@ const Events = ({ events }) => {
         </SearchButton>
       </SearchBar>
 
-      <FilterContainer>
-        <FilterButtonContainer>
-          <FilterButton
-            onClick={() => setShowWorkshops(!showWorkshops)}
-            bgColor="#7EDFA5"
-            active={showWorkshops}
-          >
-            Workshops
-          </FilterButton>
-          <FilterButton
-            onClick={() => setShowTechTalks(!showTechTalks)}
-            bgColor="#997EDF"
-            active={showTechTalks}
-          >
-            Tech Talks
-          </FilterButton>
-          <FilterButton
-            onClick={() => setShowActivities(!showActivities)}
-            bgColor="#7E99DF"
-            active={showActivities}
-          >
-            Activities
-          </FilterButton>
-        </FilterButtonContainer>
+      <FilterSortContainer>
+        <FilterContainer>
+          <Label>Show</Label>
+
+          <FilterButtonContainer>
+            <FilterButton
+              onClick={() => setShowWorkshops(!showWorkshops)}
+              bgColor="#7EDFA5"
+              active={showWorkshops}
+            >
+              Workshops
+            </FilterButton>
+            <FilterButton
+              onClick={() => setShowTechTalks(!showTechTalks)}
+              bgColor="#997EDF"
+              active={showTechTalks}
+            >
+              Tech Talks
+            </FilterButton>
+            <FilterButton
+              onClick={() => setShowActivities(!showActivities)}
+              bgColor="#7E99DF"
+              active={showActivities}
+            >
+              Activities
+            </FilterButton>
+          </FilterButtonContainer>
+        </FilterContainer>
         <DropdownContainer>
+          <Label>Sort By</Label>
           <Select
             className="basic-single"
             options={dropdownOptions}
@@ -190,7 +197,7 @@ const Events = ({ events }) => {
             styles={dropdownStyles}
           ></Select>
         </DropdownContainer>
-      </FilterContainer>
+      </FilterSortContainer>
 
       {searchResults.length ? (
         <AnimatePresence>

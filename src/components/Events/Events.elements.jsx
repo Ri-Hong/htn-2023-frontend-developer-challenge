@@ -72,24 +72,68 @@ export const FilterButton = styled.button`
   border-radius: 10px;
   font-size: 15px;
   font-weight: bold;
-  margin: 0 20px;
+  // margin: 0 20px;
   transition: background-color 0.1s ease-in-out;
 `
 
-export const FilterContainer = styled.div`
-  // border: 3px solid blue;
+export const FilterSortContainer = styled.div`
+  // border: 5px solid blue;
   margin: 10px 80px;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 1049px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 768px) {
+    margin: 10px 20px;
+  }
+`
+
+export const FilterContainer = styled.div`
+  // border: 5px solid orange;
+  display: flex;
+  flex-basis: 69%;
+  align-items: center;
+  @media (max-width: 1049px) {
+    justify-content: center;
+  }
+
+  @media (max-width: 625px) {
+    padding-bottom: 20px;
+  }
 `
 
 export const FilterButtonContainer = styled.div`
   // border: 3px solid red;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
+  gap: 10px 20px;
+
+  @media (max-width: 625px) {
+    justify-content: flex-start;
+    width: min-content;
+  }
 `
 
 export const DropdownContainer = styled.div`
-  // border: 3px solid green;
-  width: 150px;
+  // border: 5px solid green;
+  display: flex;
+  align-items: center;
+  flex-basis: 31%;
+  justify-content: flex-end;
+  // text-align: right;
+  @media (max-width: 1049px) {
+    justify-content: center;
+  }
+`
+
+export const Label = styled.h1`
+  font-size: 24px;
+  padding-right: 20px;
+  // border: 3px solid purple;
+  height: 30px;
 `
