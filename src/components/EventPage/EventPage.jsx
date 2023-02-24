@@ -119,13 +119,13 @@ const EventPage = ({ events }) => {
                 {event.public_url !== "" &&
                   <>
                   <URLContainer>
-                    <AiOutlineEye style={{fontSize: '30px', marginRight: '10px' }}></AiOutlineEye>
+                    <AiOutlineEye style={{fontSize: '2em', marginRight: '10px' }}></AiOutlineEye>
                     <URL href={event.public_url}>{event.public_url}</URL>
                   </URLContainer>
                   </>
                 }
                 <URLContainer>
-                  <AiOutlineEyeInvisible style={{fontSize: '43px', marginRight: '10px'}}></AiOutlineEyeInvisible>
+                  <AiOutlineEyeInvisible style={{fontSize: '2em', marginRight: '10px'}}></AiOutlineEyeInvisible>
                   <URL href={event.private_url}>{event.private_url}</URL>
                 </URLContainer>
               </URLSection>
