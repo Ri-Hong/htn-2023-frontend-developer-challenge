@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom'
 
+export const ParentCard = styled.div`
+  // border: 3px solid red;
+`
+
 export const StyledLink = styled(Link)`
   text-decoration: none;
-  // border: 3px solid red;
-  display: flex;
   width: fit-content;
-  border-radius: 25px;
 `
 
 export const Card = styled.div`

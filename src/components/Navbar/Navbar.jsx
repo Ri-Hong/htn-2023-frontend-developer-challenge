@@ -3,14 +3,12 @@ import { useNavigate } from 'react-router-dom';
 import AuthContext from '../../context/AuthProvider'
 import { MdOutlineLogin, MdOutlineLogout, MdOutlineEventNote } from "react-icons/md";
 
-
-
 import {
   Container,
   Title,
   ButtonContainer,
   EventsButton,
-  LoginButton
+  LoginButton,
 } from './Navbar.elements'
 
 

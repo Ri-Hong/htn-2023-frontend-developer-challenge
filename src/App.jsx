@@ -8,7 +8,7 @@ import Navbar from './components/Navbar/Navbar'
 import Events from './components/Events/Events'
 import Login from './components/Login/Login'
 import EventPage from './components/EventPage/EventPage'
-import api from './api/posts'
+import api from './api/apiBase'
 
 function App() {
   const [events, setEvents] = useState([]);
@@ -34,17 +34,18 @@ function App() {
     fetchEvents();
   }, [])
 
+
   return (
     <div className="App">
-      <BrowserRouter>
-        <Navbar></Navbar>
-        <Routes>
-          <Route path="/htn-2023-frontend-developer-challenge/" element={<Events events={events}/>}/>
-          <Route path="/events" element={<Events events={events}/>}/>
-          <Route path="/login" element={<Login/>}/>
-          <Route path="/events/:id" element={<EventPage events={events} />}/>
-        </Routes>
-      </BrowserRouter>
+        <BrowserRouter>
+          <Navbar></Navbar>
+          <Routes>
+            <Route path="/htn-2023-frontend-developer-challenge/" element={<Events events={events}/>}/>
+            <Route path="/events" element={<Events events={events}/>}/>
+            <Route path="/login" element={<Login/>}/>
+            <Route path="/events/:id" element={<EventPage events={events} />}/>
+          </Routes>
+        </BrowserRouter>
     </div>
   );
 }

@@ -158,7 +158,7 @@ export const RelCard = styled.div`
     radial-gradient(circle at 0 0, #ffffff 0, #ffffff 20px, transparent 20px) 100% 100%/25px 25px no-repeat,
     linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 10px) calc(100% - 50px) no-repeat,
     linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 50px) calc(100% - 10px) no-repeat,
-    linear-gradient(90deg, ${props => props.bgColor} 0%, #F3F3F3 60%);
+    linear-gradient(90deg, ${props => props.bgColor} 0%, #FFFFFF 60%);
 
     transition: background 0.25s ease-in-out;
   }

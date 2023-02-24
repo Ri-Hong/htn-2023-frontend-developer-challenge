@@ -1,12 +1,5 @@
 import styled from 'styled-components';
 
-
-export const HeaderContainer = styled.div`
-  display: flex;
-  // border: 3px solid red;
-  margin: 30px 0;
-`
-
 export const Header = styled.h1`
   text-align: left;
   padding: 0 80px;
@@ -23,6 +16,7 @@ export const EventsContainer = styled.div`
   gap: 80px;
   padding: 10px 80px 80px 80px;
   justify-content: center;
+
 `
 
 export const SearchBar = styled.form`
@@ -66,6 +60,36 @@ export const SearchButton = styled.button`
 `
 
 export const FilterButton = styled.button`
+  cursor: pointer;
+  background-color: ${(props) => (props.active ? props.bgColor : 'transparent')};
+  color: ${(props) => (props.active ? '#FFFFFF' : '#000000')};
+  border: 3px solid;
+  border-color: ${(props) => props.bgColor}};
 
+  box-sizing: border-box;
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0 20px;
+  transition: background-color 0.1s ease-in-out;
+`
 
+export const FilterContainer = styled.div`
+  // border: 3px solid blue;
+  margin: 10px 80px;
+  display: flex;
+  justify-content: space-between;
+`
+
+export const FilterButtonContainer = styled.div`
+  // border: 3px solid red;
+  display: flex;
+  justify-content: space-between;
+`
+
+export const DropdownContainer = styled.div`
+  // border: 3px solid green;
+  width: 150px;
 `

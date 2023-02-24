@@ -1,6 +1,8 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
 import { 
+  ParentCard,
   Card,
   Name,
   Time, 
@@ -53,7 +55,13 @@ const Event = ({ event }) => {
   }
 
   return (
-    <article>
+  <ParentCard 
+    as={motion.div}
+    layout
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+    transition={{ duration: 0.5 }}>
       <StyledLink to={`/events/${event.id}`}>
         <Card barColor={barColor}>
           <Type>{eventTypePretty}</Type>
@@ -65,7 +73,7 @@ const Event = ({ event }) => {
           </ColorBar>
         </Card>
       </StyledLink>
-    </article>
+    </ParentCard>
   )
 }
 
