@@ -5,6 +5,8 @@ Username: htn
 
 Password: 2023
 
+## Figma Design File
+https://www.figma.com/file/36po67HQXqiwpgBmAGLY84/Hack-The-North-Dashboard?node-id=0%3A1
 
 ## Writeup
 
