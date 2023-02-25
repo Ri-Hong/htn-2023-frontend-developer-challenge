@@ -19,7 +19,7 @@ For the API calls, I could have used Fetch, Axios, or GraphQL. As much as I woul
 I am particularly proud of the card animations when the cards are filtered or moved around. I used React Framer Motion to achieve that effect although it took me a while to get it working, I’m glad I found that library because I can see it being very useful in future projects. I am also glad that I learned how to use Axios and make API calls because that will also be a very important skill to have in my future projects.
 
 
-Given additional time, how would you extend your application to become a fully functional product that thousands of hackers and the general public would use at Hackathon Global Inc.™'s next event? Would you add more features and performance metrics? If so, what would they be?
+### 2. Given additional time, how would you extend your application to become a fully functional product that thousands of hackers and the general public would use at Hackathon Global Inc.™'s next event? Would you add more features and performance metrics? If so, what would they be?
 
 
 If I had additional time, I would improve the security of the authentication instead of hardcoding it. I would probably use a service like Firebase Authentication to help me with this.
@@ -33,7 +33,7 @@ In terms of additional features, I would also add a feature that would allow hac
 I would also like to implement features that would store some user state data. For example, when the user sets specific filtering or sorting options, they would be stored in cookies so that they would stay in the same state when the user leaves and comes back to the site. In addition, for the user’s convenience, I would implement persistent user authentication so that the user wouldn’t have to log in every time they visit the site.
 
 
-Any other thoughts you have (not limited to the previous questions).
+### 3. Any other thoughts you have (not limited to the previous questions).
 
 
 I was able to put into practice and enhance many of the tools and skills I have already learned, including React, Styled-Components, and CSS properties. Additionally, I learned a lot from this project, such as making Axios API calls, using JS functions like sort and filter, formatting datetimes in JS, and working with new libraries like framer motion. I thoroughly enjoyed working on this project and seeing it grow from the ground up.
