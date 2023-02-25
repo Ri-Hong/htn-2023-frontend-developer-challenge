@@ -8,7 +8,7 @@ Password: 2023
 
 ## Writeup
 
-Walk us through your development process as you worked on this project. How did you plan out the structure and design of it? How did you decide on the tools you've used? Did you encounter any problems? And if so, how did you solve them? Are there any areas of your code that you're particularly proud of or want to point out?
+**1. Walk us through your development process as you worked on this project. How did you plan out the structure and design of it? How did you decide on the tools you've used? Did you encounter any problems? And if so, how did you solve them? Are there any areas of your code that you're particularly proud of or want to point out?**
 
 For the planning process, I first needed to understand the general idea of the challenge. After reading the specifications, I decided that I would have three types of pages; a login page, events page, and a page for each individual event. I then looked at similar websites to get inspiration and ideas for the design. Once I had a general idea of what I wanted, I started creating wireframes and prototypes using Figma. This helped me to visualize the structure of the website and to get feedback from others before I started coding. I also found from previous experience that having a Figma design to work off of makes the coding process easier as I would only have to worry about implementation rather than having to also consider designing while I was implementing. 
 
